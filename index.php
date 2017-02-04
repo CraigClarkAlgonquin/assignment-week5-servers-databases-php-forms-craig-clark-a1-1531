@@ -27,42 +27,46 @@
                     <legend><i class="fa fa-pencil" aria-hidden="true"></i>Student Registration</legend>
 
                     <div>
-                        <label><i class="fa fa-user" aria-hidden="true"></i>Full name</label> 
-                        <input type="text" name="full-name" value="">
+                        <label for="full-name"><i class="fa fa-user" aria-hidden="true"></i>Full name</label> 
+                        <input type="text" name="full-name" id="full-name" value="">
                     </div>
 
                     <div>
-                        <label><i class="fa fa-envelope" aria-hidden="true"></i>Email</label> 
-                        <input type="text" name="email" value="">
+                        <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i>Email</label> 
+                        <input type="text" name="email" id="email" value="">
                     </div>
 
                     <div>
-                        <input type="checkbox" name="student" value="is-a-student"><i class="fa fa-desktop" aria-hidden="true"></i>Student of Multimedia<br>
+                        <input type="checkbox" name="student" id="student" value="is-a-student">
+                        <label for="student"><i class="fa fa-desktop" aria-hidden="true"></i>Student of Multimedia</label>
                     </div>
 
-                    <div>
-                        <input type="radio" name="major" value="web-scripting"><i class="fa fa-code" aria-hidden="true"></i>Web Scripting<br>
-                        <input type="radio" name="major" value="web-design"><i class="fa fa-paint-brush" aria-hidden="true"></i>Web Design<br>
+                    <div class="hidden-info">
+                        <input type="radio" name="major" id="web-scripting" value="web-scripting">
+                        <label for="web-scripting"><i class="fa fa-code" aria-hidden="true"></i>Web Scripting</label><br>
+                        <input type="radio" name="major" id="web-design" value="web-design">
+                        <label for="web-design"><i class="fa fa-paint-brush" aria-hidden="true"></i>Web Design</label>
                     </div>
 
-                    <div>
+                    <div class="hidden-info">
                         <select name="course-load">
                             <option value="" disabled selected>
-                                Course load
+                                <label>Course load</label>
                             </option>
 
-                            <option value="full-time">
-                                Full-time
+                            <option id="ful-time" value="full-time">
+                                <label for="full-time">Full-time</label>
                             </option>
 
-                            <option value="part-time">
-                                Part-time
+                            <option id="part-time" value="part-time">
+                                <label="part-time">Part-time</label>
                             </option>
                         </select>
                     </div>
+       
 
                     <div>
-                        <input type="submit" name="insert-data" value="Insert Data">
+                        <input type="submit" id="insert-data" name="insert-data" value="Insert Data">
                     </div>
                 </fieldset>
             </form>

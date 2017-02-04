@@ -85,12 +85,23 @@ form legend {
 	text-align: center;
 }
 
-
+form div {
+	overflow: auto;
+}
 form div:not(:last-child) {
 	background-color: #ededed;
 	border: 1px solid #dedede;
 	padding: .87rem;
 	margin: .27rem;
+}
+
+
+form div:not(:last-child) input {
+    /* Other styling.. */
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
 }
 
 form label {
@@ -154,7 +165,18 @@ footer {
 	margin-right: .35em;
 }
 
+/* deal with the hidden content on the student registration form */
 
+._hidden-info {
+      display: none;
+   }
+   
+input[type="checkbox"]:checked + label + .hidden-info {
+      display: block;
+   }
+   
+   
+   
 @media only screen and (min-width: 35rem) {
 	
 html {
