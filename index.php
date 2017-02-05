@@ -2,15 +2,21 @@
 
 <html lang="<?php include './php/global-variables.php'; print $language;?>">
 <head>
-    <title><?php 
+    <title>
+    	<?php 
             $page_title = "Student Registration Form";
             print $page_title;
-            ?></title><?php include './php/head.php';?>
+         ?>
+    </title>
+    
+    <?php include './php/head.php';?>
+    
 </head>
 
 <body>
     <header>
-        <h1><?php print $page_title; ?></h1><?php include './php/navigation.php';?>
+        <h1><?php print $page_title; ?></h1>
+        <?php include './php/navigation.php';?>
     </header>
 
     <aside>

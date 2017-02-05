@@ -46,6 +46,13 @@ h1 {
 	border-bottom: 1px solid #034EE8;
 }
 	
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	transition: all 750ms ease;
+}
 header nav ul li a, header nav ul li a:visited {
 	color: #000000;
 	display: block;
@@ -88,6 +95,7 @@ form legend {
 form div {
 	overflow: auto;
 }
+
 form div:not(:last-child) {
 	background-color: #ededed;
 	border: 1px solid #dedede;
@@ -97,11 +105,9 @@ form div:not(:last-child) {
 
 
 form div:not(:last-child) input {
-    /* Other styling.. */
-    text-align: right;
     clear: both;
     float:left;
-    margin-right:15px;
+    margin-right:1rem;
 }
 
 form label {
@@ -164,19 +170,8 @@ footer {
 .fa {
 	margin-right: .35em;
 }
-
-/* deal with the hidden content on the student registration form */
-
-._hidden-info {
-      display: none;
-   }
    
-input[type="checkbox"]:checked + label + .hidden-info {
-      display: block;
-   }
-   
-   
-   
+     
 @media only screen and (min-width: 35rem) {
 	
 html {
@@ -208,9 +203,11 @@ form div:not(:last-child) {
  form input[type=submit] {
 	 width: 16rem;
  }
- 
- header nav ul li a, header nav ul li a:visited {
+ header nav ul li {
 	 display: inline-block;
+	 
+ }
+ header nav ul li a, header nav ul li a:visited {
 	 padding-right: 2em;
 	 text-align: left;
 	 float: left;
@@ -219,4 +216,17 @@ form div:not(:last-child) {
  aside {
 	 clear: both;
  }
+}
+
+/* deal with the hidden content on the student registration form */
+
+._hidden-info {
+      color: red;
+   }
+   
+input[type="checkbox"]:checked + label + .hidden-info {
+  margin-left: 25px;
+  border: 1px solid blue;
+  color: green!important;
+  background-color: yellow!important;
 }
