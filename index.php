@@ -45,16 +45,11 @@
                     <div>
                         <input type="checkbox" name="student" id="student" value="is-a-student">
                         <label for="student"><i class="fa fa-desktop" aria-hidden="true"></i>Student of Multimedia</label>
-                    </div>
-
-                    <div class="hidden-info">
+                        <div class="hidden-info">
                         <input type="radio" name="major" id="web-scripting" value="web-scripting">
                         <label for="web-scripting"><i class="fa fa-code" aria-hidden="true"></i>Web Scripting</label><br>
                         <input type="radio" name="major" id="web-design" value="web-design">
                         <label for="web-design"><i class="fa fa-paint-brush" aria-hidden="true"></i>Web Design</label>
-                    </div>
-
-                    <div class="hidden-info">
                         <select name="course-load">
                             <option value="" disabled selected>
                                 <label>Course load</label>
@@ -69,6 +64,13 @@
                             </option>
                         </select>
                     </div>
+
+                    <div class="hidden-info">
+                        
+                    </div>
+                    </div>
+
+                    
        
 
                     <div>

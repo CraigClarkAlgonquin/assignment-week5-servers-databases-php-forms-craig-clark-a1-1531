@@ -170,7 +170,26 @@ footer {
 .fa {
 	margin-right: .35em;
 }
+ 
+ /* deal with the hidden content on the student registration form */
+
+.hidden-info {
+      display: none;
+   }
    
+.hidden-info select {
+	margin: 1rem 1rem 0 2rem;
+}
+input[type="checkbox"], input[type="radio"] {
+	width: 16px;
+	height: 16px;
+}
+
+input[type="checkbox"]:checked + label + .hidden-info {
+  display: block;
+  border: 0px!important;
+}
+  
      
 @media only screen and (min-width: 35rem) {
 	
@@ -216,17 +235,12 @@ form div:not(:last-child) {
  aside {
 	 clear: both;
  }
+ 
+ .hidden-info {
+	 width: 100%!important;
+ }
+ 
+
 }
 
-/* deal with the hidden content on the student registration form */
 
-._hidden-info {
-      color: red;
-   }
-   
-input[type="checkbox"]:checked + label + .hidden-info {
-  margin-left: 25px;
-  border: 1px solid blue;
-  color: green!important;
-  background-color: yellow!important;
-}
