@@ -30,12 +30,13 @@ html {
 html {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16pt; /* set a value for 1rem/em */
-	line-height: 1.46rem;
 	color: 000000;
 	} 
 	
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Bitter', serif;
+	line-height: 1.6rem;
+
 	}
 	
 h1 {
@@ -44,6 +45,12 @@ h1 {
 	padding: 1em;
 	text-align: center;
 	border-bottom: 1px solid #034EE8;
+}
+
+p {
+	margin-bottom: 1.26rem;
+	line-height: 1.6rem;
+
 }
 	
 header nav ul {
@@ -77,7 +84,6 @@ aside {
 	font-weight: 700;
 	text-align: center;
 	padding: 1.37em;
-	line-height: 1.37rem;
 	box-shadow: inset 15px 20px 30px -10px rgba(0,0,0,0.61);
 }
 
@@ -167,6 +173,14 @@ footer {
 	font-weight: 700;
 }
 
+.data ul {
+	list-style: disc;
+}
+
+.data ul li {
+	margin-bottom: 1em;
+}
+
 .fa {
 	margin-right: .35em;
 }
@@ -234,6 +248,7 @@ form div:not(:last-child) {
  
  aside {
 	 clear: both;
+	 text-align: left;
  }
  
  .hidden-info {
